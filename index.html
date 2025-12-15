@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>RULE_TARGET_APP_LISTS → Rule Package</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  assets/styles.css
+</head>
+<body>
+  <header>
+    <h1>Rules: Select App → See Package</h1>
+    <p class="sub">Data source: <code>RULE_TARGET_APP_LISTS</code> & <code>RULES_PACKAGE_LIST</code></p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <label for="appSel">Choose a Rule App (from RULE_TARGET_APP_LISTS)</label>
+      <select id="appSel">
+        <option value="">Loading apps…</option>
+      </select>
+    </section>
+
+    <section class="panel">
+      <div class="kv">
+        <div class="k">Selected App</div>
+        <div class="v" id="appOut">—</div>
+      </div>
+      <div class="kv">
+        <div class="k">Associated Rule Package Name</div>
+        <div class="v" id="pkgOut"><span class="muted">—</span></div>
+      </div>
+      <div class="kv">
+        <div class="k">Description (optional)</div>
+        <div class="v" id="descOut"><span class="muted">—</span></div>
+      </div>
+    </section>
+
+    <section class="actions">
+      <button id="clearBtn">Clear selection</button>
+      <button id="reloadBtn">Reload data</button>
+    </section>
+
+    <p id="status" class="status"></p>
+  </main>
+
+  <footer>
+    <small>GRS UI • Sandhya</small>
+  </footer>
+
+  assets/app.js</script>
+</body>
+</html>
