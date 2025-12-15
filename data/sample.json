@@ -1,0 +1,1437 @@
+{
+    "RULE_RESTORE_FROM_GIT": {
+        "Rule_AppName_Lists": [
+            "CMOPTAccountTypeCallReason",
+            "CMOPTITSS",
+            "CMOPTRxSpecialityCampaignName",
+            "CMOPTRxSpecialityClientName",
+            "CMOPTRxSpecialityTherapyCode",
+            "CMRegressionTestApp",
+            "CMUHCCSEligibility",
+            "CMUHCCSRouting",
+            "CMUHCCallerIntent",
+            "CMUHCCrossChannel",
+            "CMUHCDental",
+            "CMUHCEIClaimsDenial",
+            "CMUHCEIFastPass",
+            "CMUHCEIPrime",
+            "CMUHCEIRouting",
+            "CMUHCEISpecialtyIVR",
+            "CMUHCMRProviderRestriction",
+            "CMUHCMRRouting",
+            "CMUHCPACRouting",
+            "CMUHCRepeatCaller",
+            "CMUHCVision"
+        ],
+        "Rule_AppName_Group": [
+            "CM_CodeDepot",
+            "CM_OPT",
+            "CM_UHC"
+        ]
+    },
+    "RULE_TARGET_APP_LISTS": {
+        "CM_CodeDepot_AppName": [
+            "CMRegressionTestApp"
+        ],
+        "CM_OPT_AppName": [
+            "CMOPTAccountTypeCallReason",
+            "CMOPTITSS",
+            "CMOPTRxSpecialityCampaignName",
+            "CMOPTRxSpecialityClientName",
+            "CMOPTRxSpecialityTherapyCode"
+        ],
+        "CM_UHC_AppName": [
+            "CMUHCCSEligibility",
+            "CMUHCCSRouting",
+            "CMUHCCallerIntent",
+            "CMUHCCrossChannel",
+            "CMUHCDental",
+            "CMUHCEIClaimsDenial",
+            "CMUHCEIFastPass",
+            "CMUHCEIPrime",
+            "CMUHCEIRouting",
+            "CMUHCEISpecialtyIVR",
+            "CMUHCMRProviderRestriction",
+            "CMUHCMRRouting",
+            "CMUHCPACRouting",
+            "CMUHCRepeatCaller",
+            "CMUHCVision"
+        ]
+    },
+    "RULES_GIT_CONFIG": {
+        "GRS_gitRepoPrefix": [
+            "github.com/optum-omnichannel/"
+        ],
+        "GRS_gitRepoSuffix": [
+            ".git"
+        ],
+        "GIT_Sandbox_Repo_Name": [
+            "optum-omnichannel",
+            "optum-omnichannel",
+            "optum-omnichannel"
+        ],
+        "GIT_Sandbox_Repo": [
+            "github.com/optum-omnichannel/Enterprise_CM_SandBox.git",
+            "github.com/optum-omnichannel/Enterprise_CM_SandBox.git",
+            "github.com/optum-omnichannel/Enterprise_CM_SandBox.git"
+        ],
+        "GRS_gitCloningBranch": [
+            "main"
+        ],
+        "GRS_gitHotFixCloningBranch": [
+            "HotFix"
+        ],
+        "GRS_gitReleaseApiPrefix": [
+            "https://api.github.com/repos/optum-omnichannel/"
+        ],
+        "GRS_gitReleaseApiSuffix": [
+            "/git/refs/tags/"
+        ],
+        "GRS_gitReleaseMessageApiSuffix": [
+            "/git/tags/"
+        ],
+        "GRS_gitRepoTemplate": [
+            "CM_RULE_TEMPLATE"
+        ]
+    },
+    "RULES_JFROG_CONFIG": {
+        "Recipe_fileName": [
+            ".json"
+        ],
+        "GRS_searchArtifactoryBaseURL": [
+            "https://repo1.uhc.com/yy/api/search/pattern?pattern="
+        ],
+        "GRS_downloadCookbookArtifactoryBaseURL": [
+            "https://repo1.uhc.com/ayry/api/download/UHG-Snapshots/com/uhg/omni/RoutingEngineering_CM/CookBook/"
+        ],
+        "GRS_downloadRuleCookbookArtifactoryBaseURL": [
+            "https://repo1.uhc.com/arytory/api/download/UHG-Snapshots/com/uhg/omni/RoutingEngineering_CM/CookBook/RulePackage/",
+            "https://repo1.uhc.com/aytory/api/download/UHG-Snapshots/com/uhg/omni/RoutingEngineering_CM/CookBook/TemplatePackage/"
+        ],
+        "GRS_downloadRuleCookbookArtifactoryBaseURL_ReleaseDetails": [
+            "https://repo1.uhc.com/artory/api/download/UHG-Snapshots/com/uhg/omni/RoutingEngineering_CM/CookBook/RulePackage/",
+            "https://repo1.uhc.com/artinload/UHG-Snapshots/com/uhg/omni/RoutingEngineering_CM/CookBook/TemplatePackage/"
+        ],
+        "GRS_searchArtifactorySnapshotBasePath": [
+            "UHG-Snapshots:"
+        ],
+        "GRS_artifactorySnapshotBasePath": [
+            "UHG-Snapshots/"
+        ],
+        "GRS_artifactoryVirtualPath": [
+            "com/uhg/omni/RoutingEngineering_CM/RulePackage/"
+        ],
+        "GRS_artifactoryTemplateVirtualPath": [
+            "com/uhg/omni/RoutingEngineering_CM/TemplatePackage/"
+        ],
+        "GRS_artifactoryReleaseBasePath": [
+            "UHG-Releases/"
+        ],
+        "CookBook_artifactoryVirtualPath": [
+            "com/uhg/omni/RoutingEngineering_CM/CookBook/RulePackage/",
+            "com/uhg/omni/RoutingEngineering_CM/CookBook/TemplatePackage/"
+        ],
+        "CookBook_artifactoryVirtualPath_ReleaseDetails": [
+            "com/uhg/omni/RoutingEngineering_CM/CookBook/RulePackage/",
+            "com/uhg/omni/RoutingEngineering_CM/CookBook/TemplatePackage/"
+        ],
+        "CookBook_artifactoryChildVirtualPath": [
+            "DEV2",
+            "RELEASE",
+            "COMPOUND_RELEASE",
+            "QA",
+            "COMPOUND_QA",
+            "STAGE",
+            "COMPOUND_STAGE",
+            "PROD",
+            "COMPOUND_PROD",
+            "ACTIVE_PACKAGE",
+            "TOGGLE_MODE_DEV2",
+            "TOGGLE_MODE_QA",
+            "TOGGLE_MODE_STAGE",
+            "TOGGLE_MODE_PROD",
+            "COMPOUND_RESTORE_RELEASE_DEV2",
+            "CREATE_SCRIPT_OBJECT_DEV2",
+            "CREATE_SCRIPT_OBJECT_QA",
+            "CREATE_SCRIPT_OBJECT_STAGE",
+            "CREATE_SCRIPT_OBJECT_PROD",
+            "DELETE"
+        ],
+        "CookBook_artifactoryUploadFlag": [
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE",
+            "TRUE"
+        ],
+        "CookBook_colourMode": [
+            "DEFAULT",
+            "BLUE",
+            "GREEN",
+            "HOTFIX"
+        ],
+        "packageSuffix": [
+            "hotfix",
+            "blue",
+            "green",
+            "rt"
+        ]
+    },
+    "RULES_EMAIL_CONFIG": {
+        "CM_CodeDepot_GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CM_All@ds.uhc.com;OMNI_DevOps_RE_CMRegressionTestApp@ds.uhc.com"
+        ],
+        "CM_OPT_GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CM_All@ds.uhc.com"
+        ],
+        "CM_UHC_GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CM_All@ds.uhc.com"
+        ],
+        "GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CM_All@ds.uhc.com"
+        ],
+        "GRS_adminEmailID": [
+            "OMNI_DevOps_RE_Admin_DL@ds.uhc.com"
+        ],
+        "GRS_superAdminEmailID": [
+            "saravanan_shanmugam@optum.com"
+        ],
+        "Notification_GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CMOptum_All@ds.uhc.com;OMNI_DevOps_RE_CMUHC_All@ds.uhc.com"
+        ],
+        "PROD_Notification_GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CMOptum_All@ds.uhc.com;OMNI_DevOps_RE_CMUHC_All@ds.uhc.com;CCS_OMNI_Production_Control_DL@ds.uhc.com"
+        ],
+        "STAGE_Notification_GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CMOptum_All@ds.uhc.com;OMNI_DevOps_RE_CMUHC_All@ds.uhc.com"
+        ],
+        "Sandbox_GRS_teamEmailDL": [
+            "OMNI_DEV_CM_LEADS@ds.uhc.com;OMNI_DevOps_RE_CMOptum_All@ds.uhc.com;OMNI_DevOps_RE_CMUHC_All@ds.uhc.com"
+        ]
+    },
+    "SANDBOX_RULES_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "[RULES Sandbox Automation]"
+        ],
+        "GRS_emailBodySuffix": [
+            "FOR REPOSITORY"
+        ],
+        "GRS_emailSubjectPrefix": [
+            "[RULES Sandbox Automation] "
+        ],
+        "GRS_emailSubjectSuffix": [
+            "FOR REPOSITORY"
+        ]
+    },
+    "DEV2_RULES_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-CM DEV2 ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR PACKAGE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-CM DEV2 ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR PACKAGE NAME "
+        ]
+    },
+    "DEV2_RESTORE_RULES_IN_SANDBOX_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr DEV2 ENVIRONMET:RESTORE RULE IN GIT HUB AND SANDBOX GRAT "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR RELEASE "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr DEV2 ENVIRONMET:RESTORE RULE IN GIT HUB AND SANDBOX GRAT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR RELEASE "
+        ]
+    },
+    "DEV2_RESTORE_ALL_RULES_IN_SANDBOX_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr DEV2 ENVIRONMET:RESTORE RULE IN SANDBOX GRAT "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR PACKAGE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr DEV2 ENVIRONMET:RESTORE RULE IN SANDBOX GRAT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR PACKAGE NAME "
+        ]
+    },
+    "DEV2_RESTORE_ALL_RULES_IN_SANDBOX_EMAIL_CONFIG1": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr DEV2 ENVIRONMET:CONSOLIDATED SUMMARY FOR RESTORE RULE IN SANDBOX GRAT "
+        ],
+        "GRS_emailBodySuffix": [
+            " !"
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr DEV2 ENVIRONMET:CONSOLIDATED SUMMARY FOR RESTORE RULE IN SANDBOX GRAT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " !"
+        ]
+    },
+    "RELEASE_RULES_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr RULE RELEASE "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR PACKAGE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr RULE RELEASE "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR PACKAGE NAME "
+        ]
+    },
+    "RELEASE_TEMPLATE_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr RULE TEMPLATE RELEASE "
+        ],
+        "GRS_emailBodySuffix": [
+            "FOR TEMPLATE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr RULE TEMPLATE RELEASE "
+        ],
+        "GRS_emailSubjectSuffix": [
+            "FOR TEMPLATE NAME "
+        ]
+    },
+    "DEV2_TEMPLATE_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr DEV2-RELEASE ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            "FOR TEMPLATE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr DEV2-RELEASE ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            "FOR TEMPLATE NAME "
+        ]
+    },
+    "QA_TEMPLATE_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr QA ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            "FOR TEMPLATE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr QA ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            "FOR TEMPLATE NAME "
+        ]
+    },
+    "STAGE_TEMPLATE_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr STAGE ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            "FOR TEMPLATE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr STAGE ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            "FOR TEMPLATE NAME "
+        ]
+    },
+    "PROD_TEMPLATE_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr PRODUCTION ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            "FOR TEMPLATE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr PRODUCTION ENVIRONMET:TEMPLATE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            "FOR TEMPLATE NAME "
+        ]
+    },
+    "QA_RULES_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr QA ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR PACKAGE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr QA ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR PACKAGE NAME "
+        ]
+    },
+    "STAGE_RULES_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr STAGE ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR PACKAGE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr STAGE ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR PACKAGE NAME "
+        ]
+    },
+    "PROD_RULES_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr PRODUCTION ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR PACKAGE NAME "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr PRODUCTION ENVIRONMET:RULE AUTO DEPLOYMENT "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR PACKAGE NAME "
+        ]
+    },
+    "API_RULES_EXPIRY_EMAIL_CONFIG": {
+        "GRS_emailBodyPrefix": [
+            "CL1:-Conv.Mgr [NEED ATTENTION!!] RULE EXPIRY SUMMARY "
+        ],
+        "GRS_emailBodySuffix": [
+            " FOR "
+        ],
+        "GRS_emailSubjectPrefix": [
+            "CL1:-Conv.Mgr [NEED ATTENTION!!] RULE EXPIRY SUMMARY "
+        ],
+        "GRS_emailSubjectSuffix": [
+            " FOR "
+        ]
+    },
+    "API_RULES_CONFIG": {
+        "GRS_query_Rules_by_PackageID_Part1": [
+            "grs/v1/tenant/1/package/"
+        ],
+        "GRS_query_Rules_by_PackageID_Part2": [
+            "/rules"
+        ],
+        "GRS_Rule_Expiry_Days_Check": [
+            14
+        ]
+    },
+    "RULES_GENERIC_CONFIG": {
+        "CMOPTAccountTypeCallReason_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMOPTAccountTypeCallReason"
+        ],
+        "CMOPTITSS_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMOPTITSS"
+        ],
+        "CMOPTRxSpecialityCampaignName_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMOPTRxSpecialityCampaignName"
+        ],
+        "CMOPTRxSpecialityClientName_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMOPTRxSpecialityClientName"
+        ],
+        "CMOPTRxSpecialityTherapyCode_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMOPTRxSpecialityTherapyCode"
+        ],
+        "CMRegressionTestApp_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMRegressionTestApp"
+        ],
+        "CMUHCCSEligibility_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCCSEligibility"
+        ],
+        "CMUHCCSRouting_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCCSRouting"
+        ],
+        "CMUHCCallerIntent_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCCallerIntent"
+        ],
+        "CMUHCCrossChannel_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCCrossChannel"
+        ],
+        "CMUHCDental_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCDental"
+        ],
+        "CMUHCEIClaimsDenial_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCEIClaimsDenial"
+        ],
+        "CMUHCEIFastPass_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCEIFastPass"
+        ],
+        "CMUHCEIPrime_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCEIPrime"
+        ],
+        "CMUHCEIRouting_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCEIRouting"
+        ],
+        "CMUHCEISpecialtyIVR_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCEISpecialtyIVR"
+        ],
+        "CMUHCMRProviderRestriction_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCMRProviderRestriction"
+        ],
+        "CMUHCMRRouting_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCMRRouting"
+        ],
+        "CMUHCPACRouting_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCPACRouting"
+        ],
+        "CMUHCRepeatCaller_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCRepeatCaller"
+        ],
+        "CMUHCVision_GRS_importNodeName": [
+            "EnterpriseCM",
+            "CMUHCVision"
+        ],
+        "GRS_exportNodeLevel": [
+            "2"
+        ],
+        "GRS_importNodeLevel": [
+            "2"
+        ]
+    },
+    "DEV2_RULES_CONFIG": {
+        "GRS_sandboxGRATURL": [
+            "https://dev2-grat-dig.uhc.com/genesys-rules-authoring/"
+        ],
+        "GRS_dev2GRATURL": [
+            "https://dev2-grat-dig-release-001.uhc.com/genesys-rules-authoring/"
+        ],
+        "GRS_sandboxLoginAPIVirutalPath": [
+            "grs/v1/login"
+        ],
+        "GRS_sandboxPackageAPIVirutalPath": [
+            "grs/v1/tenant/1/packagename/"
+        ],
+        "GRS_sandboxNodeIDVAPIirtualPath": [
+            "grs/v1/tenant/1/businesshierarchy"
+        ],
+        "GRS_sandboxGRATloginVirtualPath": [
+            "login"
+        ],
+        "GRS_sandboxGRATPackageVirtualPath": [
+            "package"
+        ],
+        "GRS_sandboxGRATDROOLVirtualPath": [
+            "fetchDRL.jsp"
+        ],
+        "GRS_sandboxGRATChallengeTokenVirtualPath": [
+            "index.jsp"
+        ],
+        "GRS_sandboxAPIDeletePackageVirtualPath": [
+            "grs/v1/tenant/1/businessnode/"
+        ],
+        "GRS_sandboxAPIQueryTemplateVirtualPath": [
+            "grs/v1/tenant/1/templates?maxVersions=1"
+        ],
+        "GRS_dev2LoginAPIVirutalPath": [
+            "grs/v1/login"
+        ],
+        "GRS_dev2PackageAPIVirutalPath": [
+            "grs/v1/tenant/1/packagename/"
+        ],
+        "GRS_dev2NodeIDVAPIirtualPath": [
+            "grs/v1/tenant/1/businesshierarchy"
+        ],
+        "GRS_dev2GRATloginVirtualPath": [
+            "login"
+        ],
+        "GRS_dev2GRATPackageVirtualPath": [
+            "package"
+        ],
+        "GRS_dev2GRATDROOLVirtualPath": [
+            "fetchDRL.jsp"
+        ],
+        "GRS_dev2GRATChallengeTokenVirtualPath": [
+            "index.jsp"
+        ],
+        "GRS_dev2APIDeletePackageVirtualPath": [
+            "grs/v1/tenant/1/businessnode/"
+        ],
+        "GRS_dev2APIQueryTemplateVirtualPath": [
+            "grs/v1/tenant/1/templates?maxVersions=1"
+        ],
+        "GRS_deploybodyContentxmlns": [
+            "http://drools.org/drools-5.0/change-set"
+        ],
+        "GRS_deploybodyContentxmlnsxs": [
+            "http://www.w3.org/2001/xmlschema-instance"
+        ],
+        "GRS_deploybodyContentschemalocation": [
+            "http://drools.org/drools-5.0/change-set http://anonsvn.jboss.org/repos/labs/labs/jbossrules/trunk/drools-api/src/main/resources/change-set-1.0.0.xsd"
+        ],
+        "GRS_deploybodyContentsource_Prefix": [
+            "http://"
+        ],
+        "GRS_deploybodyContentsource_Suffix": [
+            ":8080/temp/"
+        ],
+        "GRS_deployDROOLurl_Prefix": [
+            "http://"
+        ],
+        "GRS_deployDROOLurl_Suffix": [
+            ":8080/genesys-rules-engine/deploy/changeset/"
+        ],
+        "GRS_tomcatDroolActualPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/grsre-rules"
+        ],
+        "GRS_tomcatDroolTempPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/webapps/temp"
+        ],
+        "GRS_backupDroolDir": [
+            "/apps/gcti/backup/routing/rules"
+        ]
+    },
+    "QA_RULES_CONFIG": {
+        "GRS_stageGRATURL": [
+            "https://qa-grat-dig.uhc.com/genesys-rules-authoring/"
+        ],
+        "GRS_stagePackageAPIVirutalPath": [
+            "grs/v1/tenant/1/packagename/"
+        ],
+        "GRS_stageNodeIDVAPIirtualPath": [
+            "grs/v1/tenant/1/businesshierarchy"
+        ],
+        "GRS_stageLoginAPIVirutalPath": [
+            "grs/v1/login"
+        ],
+        "GRS_stageGRATloginVirtualPath": [
+            "login"
+        ],
+        "GRS_stageGRATPackageVirtualPath": [
+            "package"
+        ],
+        "GRS_stageGRATChallengeTokenVirtualPath": [
+            "index.jsp"
+        ],
+        "GRS_stageAPIDeletePackageVirtualPath": [
+            "grs/v1/tenant/1/businessnode/"
+        ],
+        "GRS_stageAPIQueryTemplateVirtualPath": [
+            "grs/v1/tenant/1/templates?maxVersions=1"
+        ],
+        "GRS_deploybodyContentxmlns": [
+            "http://drools.org/drools-5.0/change-set"
+        ],
+        "GRS_deploybodyContentxmlnsxs": [
+            "http://www.w3.org/2001/xmlschema-instance"
+        ],
+        "GRS_deploybodyContentschemalocation": [
+            "http://drools.org/drools-5.0/change-set http://anonsvn.jboss.org/repos/labs/labs/jbossrules/trunk/drools-api/src/main/resources/change-set-1.0.0.xsd"
+        ],
+        "GRS_deploybodyContentsource_Prefix": [
+            "http://"
+        ],
+        "GRS_deploybodyContentsource_Suffix": [
+            ":8080/temp/"
+        ],
+        "GRS_deployDROOLurl_Prefix": [
+            "http://"
+        ],
+        "GRS_deployDROOLurl_Suffix": [
+            ":8080/genesys-rules-engine/deploy/changeset/"
+        ],
+        "GRS_tomcatDroolActualPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/grsre-rules"
+        ],
+        "GRS_tomcatDroolTempPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/webapps/temp"
+        ],
+        "GRS_backupDroolDir": [
+            "/apps/gcti/backup/routing/rules"
+        ]
+    },
+    "STAGE_RULES_CONFIG": {
+        "GRS_stageGRATURL": [
+            "https://stg-grat-dig.uhc.com/genesys-rules-authoring/"
+        ],
+        "GRS_stageLoginAPIVirutalPath": [
+            "grs/v1/login"
+        ],
+        "GRS_stagePackageAPIVirutalPath": [
+            "grs/v1/tenant/1/packagename/"
+        ],
+        "GRS_stageNodeIDVAPIirtualPath": [
+            "grs/v1/tenant/1/businesshierarchy"
+        ],
+        "GRS_stageGRATloginVirtualPath": [
+            "login"
+        ],
+        "GRS_stageGRATPackageVirtualPath": [
+            "package"
+        ],
+        "GRS_stageGRATChallengeTokenVirtualPath": [
+            "index.jsp"
+        ],
+        "GRS_stageAPIDeletePackageVirtualPath": [
+            "grs/v1/tenant/1/businessnode/"
+        ],
+        "GRS_stageAPIQueryTemplateVirtualPath": [
+            "grs/v1/tenant/1/templates?maxVersions=1"
+        ],
+        "GRS_deploybodyContentxmlns": [
+            "http://drools.org/drools-5.0/change-set"
+        ],
+        "GRS_deploybodyContentxmlnsxs": [
+            "http://www.w3.org/2001/xmlschema-instance"
+        ],
+        "GRS_deploybodyContentschemalocation": [
+            "http://drools.org/drools-5.0/change-set http://anonsvn.jboss.org/repos/labs/labs/jbossrules/trunk/drools-api/src/main/resources/change-set-1.0.0.xsd"
+        ],
+        "GRS_deploybodyContentsource_Prefix": [
+            "http://"
+        ],
+        "GRS_deploybodyContentsource_Suffix": [
+            ":8080/temp/"
+        ],
+        "GRS_deployDROOLurl_Prefix": [
+            "http://"
+        ],
+        "GRS_deployDROOLurl_Suffix": [
+            ":8080/genesys-rules-engine/deploy/changeset/"
+        ],
+        "GRS_tomcatDroolActualPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/grsre-rules"
+        ],
+        "GRS_tomcatDroolTempPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/webapps/temp"
+        ],
+        "GRS_backupDroolDir": [
+            "/apps/gcti/backup/routing/rules"
+        ]
+    },
+    "PROD_RULES_CONFIG": {
+        "GRS_stageGRATURL": [
+            "https://grat-dig.uhc.com/genesys-rules-authoring/"
+        ],
+        "GRS_stageLoginAPIVirutalPath": [
+            "grs/v1/login"
+        ],
+        "GRS_stagePackageAPIVirutalPath": [
+            "grs/v1/tenant/1/packagename/"
+        ],
+        "GRS_stageNodeIDVAPIirtualPath": [
+            "grs/v1/tenant/1/businesshierarchy"
+        ],
+        "GRS_stageGRATloginVirtualPath": [
+            "login"
+        ],
+        "GRS_stageGRATPackageVirtualPath": [
+            "package"
+        ],
+        "GRS_stageGRATChallengeTokenVirtualPath": [
+            "index.jsp"
+        ],
+        "GRS_stageAPIDeletePackageVirtualPath": [
+            "grs/v1/tenant/1/businessnode/"
+        ],
+        "GRS_stageAPIQueryTemplateVirtualPath": [
+            "grs/v1/tenant/1/templates?maxVersions=1"
+        ],
+        "GRS_deploybodyContentxmlns": [
+            "http://drools.org/drools-5.0/change-set"
+        ],
+        "GRS_deploybodyContentxmlnsxs": [
+            "http://www.w3.org/2001/xmlschema-instance"
+        ],
+        "GRS_deploybodyContentschemalocation": [
+            "http://drools.org/drools-5.0/change-set http://anonsvn.jboss.org/repos/labs/labs/jbossrules/trunk/drools-api/src/main/resources/change-set-1.0.0.xsd"
+        ],
+        "GRS_deploybodyContentsource_Prefix": [
+            "http://"
+        ],
+        "GRS_deploybodyContentsource_Suffix": [
+            ":8080/temp/"
+        ],
+        "GRS_deployDROOLurl_Prefix": [
+            "http://"
+        ],
+        "GRS_deployDROOLurl_Suffix": [
+            ":8080/genesys-rules-engine/deploy/changeset/"
+        ],
+        "GRS_tomcatDroolActualPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/grsre-rules"
+        ],
+        "GRS_tomcatDroolTempPath": [
+            "/apps/gcti/thirdparty/tomcat/8080/webapps/temp"
+        ],
+        "GRS_backupDroolDir": [
+            "/apps/gcti/backup/routing/rules"
+        ]
+    },
+    "RULES_PACKAGE_LIST": {
+        "CMOPTAccountTypeCallReason_Rules_PackageName": [
+            "cmoptaccounttypecallreason.inbound.rt"
+        ],
+        "CMOPTITSS_Rules_PackageName": [
+            "cmoptitss.inbound.rt"
+        ],
+        "CMOPTRxSpecialityCampaignName_Rules_PackageName": [
+            "cmoptrxspecialitycampaignname.inbound.rt"
+        ],
+        "CMOPTRxSpecialityClientName_Rules_PackageName": [
+            "cmoptrxspecialityclientname.inbound.rt"
+        ],
+        "CMOPTRxSpecialityTherapyCode_Rules_PackageName": [
+            "cmoptrxspecialitytherapycode.inbound.rt"
+        ],
+        "CMRegressionTestApp_Rules_PackageName": [
+            "cmregressiontestapp.inbound.rt"
+        ],
+        "CMUHCCSEligibility_Rules_PackageName": [
+            "cmuhccseligibility.inbound.rt"
+        ],
+        "CMUHCCSRouting_Rules_PackageName": [
+            "cmuhccsrouting.inbound.rt"
+        ],
+        "CMUHCCallerIntent_Rules_PackageName": [
+            "cmuhccallerintent.inbound.rt"
+        ],
+        "CMUHCCrossChannel_Rules_PackageName": [
+            "cmuhccrosschannel.inbound.rt"
+        ],
+        "CMUHCDental_Rules_PackageName": [
+            "cmuhcdental.inbound.rt"
+        ],
+        "CMUHCEIClaimsDenial_Rules_PackageName": [
+            "cmuhceiclaimsdenial.inbound.rt"
+        ],
+        "CMUHCEIFastPass_Rules_PackageName": [
+            "cmuhceifastpass.inbound.rt"
+        ],
+        "CMUHCEIPrime_Rules_PackageName": [
+            "cmuhceiprime.inbound.rt"
+        ],
+        "CMUHCEIRouting_Rules_PackageName": [
+            "cmuhceirouting.inbound.rt"
+        ],
+        "CMUHCEISpecialtyIVR_Rules_PackageName": [
+            "cmuhceispecialtyivr.inbound.rt"
+        ],
+        "CMUHCMRProviderRestriction_Rules_PackageName": [
+            "cmuhcmrproviderrestriction.inbound.rt"
+        ],
+        "CMUHCMRRouting_Rules_PackageName": [
+            "cmuhcmrrouting.inbound.rt"
+        ],
+        "CMUHCPACRouting_Rules_PackageName": [
+            "cmuhcpacrouting.inbound.rt"
+        ],
+        "CMUHCRepeatCaller_Rules_PackageName": [
+            "cmuhcrepeatcaller.inbound.rt"
+        ],
+        "CMUHCVision_Rules_PackageName": [
+            "cmuhcvision.inbound.rt"
+        ]
+    },
+    "RULES_PACKAGE_DESCRIPTION": {
+        "CMOPTAccountTypeCallReason_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMOPTITSS_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMOPTRxSpecialityCampaignName_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMOPTRxSpecialityClientName_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMOPTRxSpecialityTherapyCode_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMRegressionTestApp_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCCSEligibility_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCCSRouting_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCCallerIntent_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCCrossChannel_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCDental_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCEIClaimsDenial_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCEIFastPass_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCEIPrime_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCEIRouting_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCEISpecialtyIVR_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCMRProviderRestriction_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCMRRouting_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCPACRouting_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCRepeatCaller_Rules_PackageDescription": [
+            "Inbound Rule"
+        ],
+        "CMUHCVision_Rules_PackageDescription": [
+            "Inbound Rule"
+        ]
+    },
+    "ALL_PACKAGE_LIST": {
+        "Rules_PackageName": [
+            "cmoptaccounttypecallreason.inbound.rt",
+            "cmoptitss.inbound.rt",
+            "cmoptrxspecialitycampaignname.inbound.rt",
+            "cmoptrxspecialityclientname.inbound.rt",
+            "cmoptrxspecialitytherapycode.inbound.rt",
+            "cmregressiontestapp.inbound.rt",
+            "cmuhccallerintent.inbound.rt",
+            "cmuhccrosschannel.inbound.rt",
+            "cmuhccseligibility.inbound.rt",
+            "cmuhccsrouting.inbound.rt",
+            "cmuhcdental.inbound.rt",
+            "cmuhceiclaimsdenial.inbound.rt",
+            "cmuhceifastpass.inbound.rt",
+            "cmuhceiprime.inbound.rt",
+            "cmuhceirouting.inbound.rt",
+            "cmuhceispecialtyivr.inbound.rt",
+            "cmuhcmrproviderrestriction.inbound.rt",
+            "cmuhcmrrouting.inbound.rt",
+            "cmuhcpacrouting.inbound.rt",
+            "cmuhcrepeatcaller.inbound.rt",
+            "cmuhcvision.inbound.rt"
+        ],
+        "packagePermissionMode": [
+            "777"
+        ],
+        "packageExtractSleepTime": [
+            "5",
+            "SECONDS"
+        ],
+        "packageDeleteSleepTime": [
+            "5",
+            "SECONDS"
+        ]
+    },
+    "DEV2_DEPLOY_GRS_LIST": {
+        "CMOPTAccountTypeCallReason_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTITSS_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTRxSpecialityCampaignName_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTRxSpecialityClientName_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTRxSpecialityTherapyCode_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMRegressionTestApp_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCSEligibility_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCSRouting_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCallerIntent_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCrossChannel_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCDental_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIClaimsDenial_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIFastPass_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIPrime_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIRouting_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEISpecialtyIVR_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCMRProviderRestriction_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCMRRouting_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCPACRouting_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCRepeatCaller_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCVision_GRS_APP_Servers": [
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com"
+        ]
+    },
+    "QA_DEPLOY_GRS_LIST": {
+        "CMOPTAccountTypeCallReason_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTITSS_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTRxSpecialityCampaignName_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTRxSpecialityClientName_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMOPTRxSpecialityTherapyCode_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMRegressionTestApp_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCSEligibility_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCSRouting_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCallerIntent_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCCrossChannel_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCDental_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIClaimsDenial_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIFastPass_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIPrime_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEIRouting_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCEISpecialtyIVR_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCMRProviderRestriction_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCMRRouting_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCPACRouting_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCRepeatCaller_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ],
+        "CMUHCVision_GRS_APP_Servers": [
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com"
+        ]
+    },
+    "STAGE_DEPLOY_GRS_LIST": {
+        "CMOPTAccountTypeCallReason_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMOPTITSS_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMOPTRxSpecialityCampaignName_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMOPTRxSpecialityClientName_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMOPTRxSpecialityTherapyCode_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMRegressionTestApp_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCCSEligibility_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCCSRouting_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCCallerIntent_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCCrossChannel_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCDental_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCEIClaimsDenial_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCEIFastPass_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCEIPrime_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCEIRouting_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCEISpecialtyIVR_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCMRProviderRestriction_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCMRRouting_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCPACRouting_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCRepeatCaller_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ],
+        "CMUHCVision_GRS_APP_Servers": [
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com"
+        ]
+    },
+    "PROD_DEPLOY_GRS_LIST": {
+        "CMOPTAccountTypeCallReason_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMOPTITSS_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+			"cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMOPTRxSpecialityCampaignName_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMOPTRxSpecialityClientName_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMOPTRxSpecialityTherapyCode_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMRegressionTestApp_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCCSEligibility_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCCSRouting_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCCallerIntent_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCCrossChannel_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCDental_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCEIClaimsDenial_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCEIFastPass_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCEIPrime_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCEIRouting_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCEISpecialtyIVR_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCMRProviderRestriction_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCMRRouting_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCPACRouting_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCRepeatCaller_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ],
+        "CMUHCVision_GRS_APP_Servers": [
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com"
+        ]
+    },
+    "DEV2_DEPLOY_ALL_GRS_LIST": {
+        "ALL_GRS_APP_Servers": [
+            "cl1-dev-rhel-elr-cm-gre-rte-002.uhc.com",
+            "cl1-dev-rhel-ctc-cm-gre-rte-002.uhc.com"
+        ]
+    },
+    "QA_DEPLOY_ALL_GRS_LIST": {
+        "ALL_GRS_APP_Servers": [
+            "cl1-qa-rhel-elr-cm-gre-rte-002.uhc.com",
+            "cl1-qa-rhel-ctc-cm-gre-rte-002.uhc.com"
+        ]
+    },
+    "STAGE_DEPLOY_ALL_GRS_LIST": {
+        "ALL_GRS_APP_Servers": [
+            "cl1-stg-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-stg-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-stg-rhel-ctc-cm-gre-rte-002.uhc.com"
+        ]
+    },
+    "PROD_DEPLOY_ALL_GRS_LIST": {
+        "ALL_GRS_APP_Servers": [
+            "cl1-rhel-elr-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-elr-cm-gre-rte-003.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-004.uhc.com",
+            "cl1-rhel-ctc-cm-gre-rte-003.uhc.com"
+        ]
+    },
+    "GRS_APP_GROUP": {
+        "-cm-": [
+            "CMOPTAccountTypeCallReason",
+            "CMOPTITSS",
+            "CMOPTRxSpecialityCampaignName",
+            "CMOPTRxSpecialityClientName",
+            "CMOPTRxSpecialityTherapyCode",
+            "CMRegressionTestApp",
+            "CMUHCCSEligibility",
+            "CMUHCCSRouting",
+            "CMUHCCallerIntent",
+            "CMUHCCrossChannel",
+            "CMUHCDental",
+            "CMUHCEIClaimsDenial",
+            "CMUHCEIFastPass",
+            "CMUHCEIPrime",
+            "CMUHCEIRouting",
+            "CMUHCEISpecialtyIVR",
+            "CMUHCMRProviderRestriction",
+            "CMUHCMRRouting",
+            "CMUHCPACRouting",
+            "CMUHCRepeatCaller",
+            "CMUHCVision"
+        ],
+        "All": [
+            "CMRegressionTestApp"
+        ]
+    }
+}
