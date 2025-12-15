@@ -1,0 +1,51 @@
+
+async function init() {
+  const appSel = document.getElementById('appSel');
+  const clearBtn = document.getElementById('clearBtn');
+  const reloadBtn = document.getElementById('reloadBtn');
+
+  setStatus('Loading normalized data…');
+
+  let data;
+  try {
+    data = await fetch('data/normalized.json', { cache: 'no-store' }).then(r => r.json());
+  } catch (err) {
+    setStatus(err.message, 'error');
+    return;
+  }
+
+  setStatus('');
+
+  // Collect all apps from lobToApps
+  const allApps = Object.values(data.lobToApps).flat().sort();
+  setOptions(appSel, allApps, 'Select an App');
+
+  // Preselect if saved
+  const savedApp = localStorage.getItem('selectedApp') || '';
+  if (savedApp && allApps.includes(savedApp)) {
+    appSel.value = savedApp;
+    updateOutputs(savedApp);
+  }
+
+  appSel.addEventListener('change', () => {
+    const app = appSel.value;
+    localStorage.setItem('selectedApp', app);
+    updateOutputs(app);
+  });
+
+  clearBtn.addEventListener('click', () => {
+    localStorage.removeItem('selectedApp');
+    appSel.value = '';
+    updateOutputs('');
+  });
+
+  reloadBtn.addEventListener('click', init);
+
+  function updateOutputs(app) {
+    const pkg = app ? data.appToPackage[app] || '—' : '—';
+    const desc = app ? data.appToDescription[app] || '—' : '—';
+    document.getElementById('appOut').textContent = app || '—';
+    document.getElementById('pkgOut').textContent = pkg;
+    document.getElementById('descOut').textContent = desc;
+  }
+}
